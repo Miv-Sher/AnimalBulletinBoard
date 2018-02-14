@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/theme"
+   >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/crime_title_edit_text"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя животного"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_type"
+        android:layout_below="@+id/crime_title_edit_text"
+        android:text="Выберите тип*:"
+        android:layout_toLeftOf="@+id/imageView_photo"
+        android:layout_toStartOf="@+id/imageView_photo" />
+
+
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/text_type">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/radioButton_dog"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/radioButton_cat"
+                android:layout_weight="1"
+                android:checked="false"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/radioButton_dog"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/radioButton_horse"
+                android:layout_weight="1"
+                android:checked="false"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/radioButton_cat"/>
+
+
+        </RadioGroup>
+
+        <ImageView
+
+            android:id="@+id/imageView_dog"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:src="@drawable/dog"
+
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+
+        <ImageView
+
+            android:id="@+id/imageView_cat"
+            android:layout_width="75px"
+            android:layout_height="75px"
+
+            android:src="@drawable/cat"
+            android:layout_above="@+id/imageView_horse"
+            android:layout_below="@+id/imageView_dog"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+
+        <ImageView
+
+            android:id="@+id/imageView_horse"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:src="@drawable/horse"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:id="@+id/imageView_photo"
+            android:src="@drawable/unknown"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/imageView_dog"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:text="Загрузить фото"
+            android:id="@+id/button_photo"
+
+            android:layout_below="@+id/imageView_photo"
+            android:layout_gravity="right"
+            android:layout_alignLeft="@+id/imageView_photo"
+            android:layout_alignStart="@+id/imageView_photo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите пол*:"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/imageView_horse"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup2">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/radioButton_male" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_female"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <ImageView
+
+                android:id="@+id/imageView_male"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:src="@drawable/male"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/radioGroup2"
+                android:layout_toEndOf="@+id/radioGroup2" />
+
+            <ImageView
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:id="@+id/imageView_female"
+                android:src="@drawable/female"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/radioGroup2"
+                android:layout_toEndOf="@+id/radioGroup2" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editText_age"
+        android:hint="Возраст"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button_photo"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:hint="Город"
+        android:id="@+id/editText_city" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText_phone"
+        android:hint="Номер телефона"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_description"
+        android:hint="Введите дополнительную информацию. Необязательно."/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_submit_post"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_navigation_check_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

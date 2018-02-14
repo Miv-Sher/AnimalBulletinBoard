@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView_avatar"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:src="@drawable/photo"
+        android:layout_below="@+id/title_textView"
+        android:scaleType="centerCrop"/>
+    />
+
+    <ImageView
+        android:id="@+id/imageView_type"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:src="@drawable/horse"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView_sex"
+        android:layout_toStartOf="@+id/imageView_sex" />
+
+    <ImageView
+        android:id="@+id/imageView_sex"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:src="@drawable/male"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textStyle="bold"
+        tools:text="Crime Title"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/imageView_type"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageView_type"
+        android:layout_toStartOf="@+id/imageView_type" />
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        tools:text="Crime Date"
+        android:layout_below="@+id/title_textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возраст: "
+        android:padding="4dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/date_textView"
+        android:layout_toRightOf="@+id/imageView_avatar"
+        android:layout_toEndOf="@+id/imageView_avatar" />
+
+    <TextView
+        android:id="@+id/age_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        tools:text="Тут цифрки"
+        android:padding="4dp"
+        android:layout_below="@+id/date_textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Найден: "
+        android:padding="4dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView"
+        android:layout_toRightOf="@+id/imageView_avatar"
+        android:layout_toEndOf="@+id/imageView_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание: "
+        android:id="@+id/textView3"
+        android:padding="4dp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/imageView_avatar"
+        android:layout_toEndOf="@+id/imageView_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Коооооооооороооооооооооооооткоооооооооое описание"
+        android:id="@+id/textView_desc"
+        android:padding="4dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/post_num_stars"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_toggle_star_outline_24"
+        android:layout_alignTop="@+id/imageButton_mail"
+        android:layout_toStartOf="@+id/post_num_stars" />
+
+    <TextView
+        tools:text="7"
+        android:id="@+id/post_num_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_below="@+id/textView_desc"
+        android:layout_alignTop="@+id/star"
+        android:layout_alignEnd="@+id/date_textView"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Город"
+        android:padding="4dp"
+        android:id="@+id/textView_city"
+        android:layout_alignTop="@+id/title_textView"
+        android:layout_toStartOf="@+id/imageView_type"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_call"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_call"
+        android:layout_below="@+id/imageView_avatar"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_mail"
+        android:src="@android:drawable/ic_menu_send"
+        android:padding="4dp"
+        android:layout_below="@+id/imageView_avatar"
+        android:layout_toEndOf="@+id/imageButton_call" />
+
+    <TextView
+        tools:text="7"
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/star"
+        android:layout_alignEnd="@+id/date_textView" />
+
+    <TextView
+        tools:text="7"
+        android:id="@+id/text_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/star"
+        android:layout_toStartOf="@+id/post_num_stars" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_edit"
+        android:id="@+id/imageButton_edit"
+        android:padding="4dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/imageButton_mail"
+        android:layout_toEndOf="@+id/imageButton_mail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_delete"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_alignTop="@+id/imageButton_edit"
+        android:layout_toEndOf="@+id/imageButton_edit"
+        android:visibility="invisible"
+        android:padding="4dp"/>
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:id="@+id/imageView_happy"
+        android:src="@drawable/tick"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/date_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/textView_desc" />
+
+
+    <![CDATA[    />
+
+]]>
+</RelativeLayout>

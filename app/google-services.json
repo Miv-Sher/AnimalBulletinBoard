@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "969076202999",
+    "firebase_url": "https://helpanimals-f5035.firebaseio.com",
+    "project_id": "helpanimals-f5035",
+    "storage_bucket": "helpanimals-f5035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969076202999:android:4cf35fdc7f8d8bd9",
+        "android_client_info": {
+          "package_name": "com.miv_sher.crimecat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969076202999-5s6ds2sdlbdt8rnqdjph4f9kam4gn668.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miv_sher.crimecat",
+            "certificate_hash": "9F78448DDCBF1CF1E087434C2280419BFA0CE009"
+          }
+        },
+        {
+          "client_id": "969076202999-n381i72al0n2f8nk9btpugr3p9n4bc0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBrM8e96cWUzRrV3Y44tS9siwfInJJiPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969076202999-n381i72al0n2f8nk9btpugr3p9n4bc0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
